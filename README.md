@@ -1,6 +1,6 @@
 ## Python脚本内嵌base64编码点阵字体库 `bitfont.py`  [详细使用参考](https://262235.xyz/index.php/archives/284/)
 
-![https://262235.xyz/usr/uploads/2021/08/828349640.png]
+![bitfont](https://262235.xyz/usr/uploads/2021/08/828349640.png)
 
 - 下载 bitfont.py 文件，输入如下命令，就能显示演示图
 
