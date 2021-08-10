@@ -1,17 +1,3 @@
-# Python学习: pillow_font 图片上填写文本
-
-
-### 脚本 image_font.py ，批量生成字体预览图, pil 和 ttf 支持
-
-```
-Usage: python3 image_font.py fontfiles...
-
-$ python3 image_font.py  *.pil  ttf/*.ttf
-```
-
-###  image_font.py  源码
- 
-```
 import os, sys, glob
 from PIL import Image, ImageDraw, ImageFont
 
@@ -49,4 +35,3 @@ for f in files:
 
 print("\nUsage: python3 image_font.py fontfiles...")
 
-```
