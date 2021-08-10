@@ -1,5 +1,7 @@
 # Python学习: pillow_font 图片上填写文本
 
+![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/Fixedsys12.pil.png)
+![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/VCRMono16.pil.png)
 
 ### 脚本 image_font.py ，批量生成字体预览图, pil 和 ttf 支持
 
@@ -9,9 +11,44 @@ Usage: python3 image_font.py fontfiles...
 $ python3 image_font.py  *.pil  ttf/*.ttf
 ```
 
-###  image_font.py  源码
- 
+
+![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/VCR_OSD_MONO_1.001.ttf.png)
+![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/fixedsys_excelsior.ttf.png)
+
+### 项目文件和工具简介
+```bash
+image_font.py
+pilfont.py        # pillow 字体转换工具
+Fixedsys12.pbm    
+Fixedsys12.pil    # 使用 pilfont.py 工具，bdf转pil
+VCRMono16.pbm     # pbm 为点阵位图，如果缺少pil没法使用
+VCRMono16.pil
+
+./bdf:       # 目录下2个bdf字体,使用ttf2bdf工具转换所得
+Fixedsys12.bdf
+VCRMono16.bdf
+
+./png:
+Fixedsys12.pil.png
+fixedsys_excelsior.ttf.png
+FreeMono.ttf.png
+VCRMono16.pil.png
+VCR_OSD_MONO_1.001.ttf.png
+
+./tools:         # ttf2bdf工具和Bdf查看编辑
+BdfEditor.exe
+ttf2bdf.exe
+
+./ttf:           # pil 点阵字体源 ttf 文件
+fixedsys_excelsior.ttf
+VCR_OSD_MONO_1.001.ttf
+FreeMono.ttf
 ```
+
+![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/FreeMono.ttf.png)
+
+###  image_font.py  源码
+```python
 import os, sys, glob
 from PIL import Image, ImageDraw, ImageFont
 
