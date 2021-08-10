@@ -1,4 +1,12 @@
-# Python学习: pillow_font 图片上填写文本
+## Python脚本内嵌base64编码点阵字体库 `bitfont.py`  [详细使用参考](https://262235.xyz/index.php/archives/284/)
+
+![https://262235.xyz/usr/uploads/2021/08/828349640.png]
+
+- 下载 bitfont.py 文件，输入如下命令，就能显示演示图
+
+    python3 bitfont.py
+
+## Python学习: pillow_font 图片上填写文本
 
 ![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/Fixedsys12.pil.png)
 ![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/VCRMono16.pil.png)
@@ -10,7 +18,6 @@ Usage: python3 image_font.py fontfiles...
 
 $ python3 image_font.py  *.pil  ttf/*.ttf
 ```
-
 
 ![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/VCR_OSD_MONO_1.001.ttf.png)
 ![](https://raw.githubusercontent.com/hongwenjun/pillow_font/main/png/fixedsys_excelsior.ttf.png)
